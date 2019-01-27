@@ -18,13 +18,14 @@ public class ProductOwner {
     private String lastName;
 
     @Column(name = "CompaneName", nullable = false)
-    private List<Contact> contactList;
+    //private List<Contact> contactList;
+    private String contactList;
 
     public long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -44,11 +45,20 @@ public class ProductOwner {
         this.lastName = lastName;
     }
 
-    public List<Contact> getContactList() {
+    /*public List<Contact> getContactList() {
         return contactList;
     }
 
     private void setContactList(List<Contact> contactList) {
+        this.contactList = contactList;
+    }*/
+
+
+    public String getContactList() {
+        return contactList;
+    }
+
+    public void setContactList(String contactList) {
         this.contactList = contactList;
     }
 

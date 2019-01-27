@@ -17,7 +17,12 @@ public class Item {
     @Column(name = "Title", nullable = false)
     private String title;
 
-    private List<CategorieTypes> categorieTypesList;
+   // private List<CategorieTypes> categorieTypesList;
+    private String categorieTypesList;
+
+    public void setCategorieTypesList(String categorieTypesList) {
+        this.categorieTypesList = categorieTypesList;
+    }
 
     @Column(name = "Count", nullable = false)
     private int count;
@@ -33,7 +38,7 @@ public class Item {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -44,13 +49,13 @@ public class Item {
         this.title = title;
     }
 
-    public List<CategorieTypes> getCategorieTypesList() {
+    /*public List<CategorieTypes> getCategorieTypesList() {
         return categorieTypesList;
     }
 
     private void setCategorieTypesList(List<CategorieTypes> categorieTypesList) {
         this.categorieTypesList = categorieTypesList;
-    }
+    }*/
 
     public int getCount() {
         return count;
