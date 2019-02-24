@@ -18,14 +18,14 @@ public class Item {
     private String title;
 
    // private List<CategorieTypes> categorieTypesList;
-    private String categorieTypesList;
+    //private String categorieTypesList;
 
-    public void setCategorieTypesList(String categorieTypesList) {
+    /*public void setCategorieTypesList(String categorieTypesList) {
         this.categorieTypesList = categorieTypesList;
-    }
+    }*/
 
-    @Column(name = "Count", nullable = false)
-    private int count;
+    @Column(name = "Count")
+    private Integer count;
 
     @Column(name = "Price", nullable = false)
     private double price;
@@ -61,7 +61,7 @@ public class Item {
         return count;
     }
 
-    private void setCount(int count) {
+    private void setCount(Integer count) {
         this.count = count;
     }
 
@@ -86,7 +86,7 @@ public class Item {
         return "items{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
-                ", categorieTypesList=" + categorieTypesList +
+             //   ", categorieTypesList=" + categorieTypesList +
                 ", count=" + count +
                 ", price=" + price +
                 ", storingDate=" + storingDate +
