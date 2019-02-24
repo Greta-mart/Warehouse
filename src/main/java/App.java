@@ -17,8 +17,10 @@ public class App {
                 while (itemIterator.hasNext()) {
                     Item item = (Item) itemIterator.next();
                     System.out.println("Product owner number " + item.getId() +
-                            ", First name is " + item.getPrice() +
-                            ", Last name is " + item.getTitle());
+                            ", Price is " + item.getPrice() +
+                            ", Title is " + item.getTitle() +
+                            ", Count is " + item.getCount() +
+                            ", Storing Date is " + item.getStoringDate());
                     Long productOwners = item.getId();
 
                     /*Iterator<ProductOwner> productIterator = items.iterator();
