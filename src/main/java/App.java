@@ -13,7 +13,7 @@ public class App {
             try {
                 Collection<Item> items = Factory.getInstance().getItemRepository().getAllItems();
                 Iterator<Item> itemIterator = items.iterator();
-                System.out.println("list of product Items:");
+                System.out.println("List of product Items :");
                 while (itemIterator.hasNext()) {
                     Item item = (Item) itemIterator.next();
                     System.out.println("Product owner number " + item.getId() +
